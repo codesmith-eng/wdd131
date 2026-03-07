@@ -30,6 +30,10 @@ footer {
     margin: 0 auto;
 }
 
+header{
+    width:1400px;
+}
+
 #course-title {
     display: block;
     text-align: center;
