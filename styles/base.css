@@ -114,13 +114,13 @@ main div {
 }
 
 
-.card nav ul {
+.card nav nav a{
     margin-left: 50px;
     line-height: 30px;
     margin-top: 35px;
 }
 
-.card nav ul a {
+.card nav a {
     text-decoration: none;
 }
 
