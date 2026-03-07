@@ -5,6 +5,7 @@
     --body-font: Arial, Helvetica, sans-serif;
     --head-color: white;
     --new: rgb(33, 33, 30);
+    --body-font: Arial, Helvetica, sans-serif;
     --my-font: 'Trebuchet MS',
         'Lucida Sans Unicode',
         'Lucida Grande',
@@ -78,8 +79,8 @@ main {
 main div {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 30px;
     width: 1300px;
+    gap: 30px;
     margin: 0 auto;
 }
 
@@ -102,31 +103,15 @@ main div {
     background-color: white;
     color: black;
     border-bottom: 1px solid black;
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
-
 }
 
-.card p,
-.card img,
-.card figcaption {
-    padding: 15px;
-}
-
-
-.card nav a{
-    margin-left: 50px;
-    line-height: 30px;
-    margin-top: 35px;
-}
-
-.card nav a {
-    text-decoration: none;
-}
 
 .card img {
     float: right;
     margin-top: -90px;
+    margin-right: 15px;
     display: block;
 }
 
@@ -144,7 +129,8 @@ main div {
 
 .card p {
     display: block;
-    width: 700px;
+    width: 540px;
+    padding: 15px;
 }
 
 .card article p {
@@ -155,7 +141,7 @@ main div {
 
 .card article h3 {
     position: absolute;
-    bottom: 3px;
+    bottom: 5px;
     font-style: italic;
     font-size: medium;
     background-color: var(--head-color);
