@@ -1,0 +1,28 @@
+/* Using the universal selector (*) to control the page layout. This is very important and must be in all your css file */
+
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #e6f2ff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    padding: 5px;
+    background-color: #fff;
+}
