@@ -1,0 +1,48 @@
+@media screen and (min-width: 45em) {
+    .one {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .two {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .three {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header,footer{
+        length: 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+    
+    /* The nav element is flexed  whenever the screen is at min-width: 45em */
+    nav.show{
+        display: flex;
+    }
+}

@@ -1,0 +1,129 @@
+:root {
+    --background: black;
+    --primary-color: rgb(7, 7, 92);
+    --heading-font: Georgia, 'Times New Roman', Times, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --head-color: white;
+    --new: rgb(33, 33, 30);
+    --my-font: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+    --another-font: Arial;
+}
+
+/* Using the universal selector (*) to control the page layout. 
+This is very important and must be in all your css file*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile View */
+
+header,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--primary-color);
+    color: var(--head-color);
+    padding: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header nav a {
+    color: var(--head-color);
+    text-decoration: none;
+}
+
+/* This navigation urls will not display without the button */
+nav {
+    max-width: 800px;
+    display:none;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-align: right;
+    transition: 0.5s;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: grey;
+}
+
+/* When the button ≡ clicked Javascript makes it visible using temple.js code. 
+This code is very important to make the hamburger button interact with the html
+Here the nav element is connected to the temple.js code using the "show" keyword in the temple.js code */
+nav.show {
+    display: block;
+}
+
+
+header p {
+    padding: 10px;
+}
+
+#menu {
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    color: white;
+    position: absolute;
+    top: -3px;
+    right: 10px;
+}
+
+/* The button before pressing */
+#menu::before {
+    content: "≡";
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+figure img {
+    width: 270px;
+}
+
+/* The button after pressing */
+#menu.show::before {
+    content: "X"
+}
+
+figcaption {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center ;
+    font-size: 1.2rem;
+
+}
