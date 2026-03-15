@@ -33,16 +33,12 @@
         justify-content: space-between;
     }
 
-    header,footer{
-        length: 100%;
-    }
-
     #menu {
         display: none;
     }
-    
+
     /* The nav element is flexed  whenever the screen is at min-width: 45em */
-    nav.show{
+    nav.show {
         display: flex;
     }
 }
