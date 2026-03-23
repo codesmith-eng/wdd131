@@ -47,7 +47,7 @@ header nav a {
 /* This navigation urls will not display without the button */
 nav {
     max-width: 800px;
-    display:none;
+    display: none;
 }
 
 nav a {
@@ -123,7 +123,7 @@ figcaption {
 footer {
     margin-top: 30px;
     padding: 20px;
-    text-align: center ;
+    text-align: center;
     font-size: 1.2rem;
 
 }

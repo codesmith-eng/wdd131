@@ -1,0 +1,87 @@
+:root {
+    --header-background: green;
+    --header-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile View */
+
+header,
+main,
+footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    background-color: var(--header-background);
+    color: var(--header-color);
+    font-family: "Roboto", sans-serif;
+    border-bottom: 20px solid black;
+    padding: 20px;
+    /* /The below declaration makes the the header to shrink and expand with screen sizes*/
+    font-size: clamp(15px, 1.0vw, 18px);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero {
+    margin: 0 auto;
+}
+
+
+
+.data {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid grey;
+}
+
+.data h2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.weather {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.weather h2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.weather img {
+    width: 20%;
+}
+
+footer {
+    background-color: var(--header-background);
+    padding: 40px;
+    text-align: center;
+    color: var(--header-color);
+    font-family: "Roboto", sans-serif;
+    border-top: 20px solid black;
+    
+    /* /The below declaration makes the the header to shrink and expand with screen sizes*/
+    font-size: clamp(15px, 1.0vw, 18px);
+}
