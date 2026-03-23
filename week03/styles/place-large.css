@@ -17,8 +17,8 @@
         font-family: "Roboto", sans-serif;
         border-bottom: 20px solid black;
 
-        /* /The below declaration makes the the header to shrink and expand with screen sizes*/ 
-        font-size: clamp(12px, 1.5vw, 20px) 
+        /* /The below declaration makes the the header to shrink and expand with screen sizes*/
+        font-size: clamp(12px, 1.5vw, 20px)
     }
 
 
@@ -77,16 +77,9 @@
 
     /* The rule to put the icon before the weather */
     .weather h2::after {
-        content: "";
-        display: inline-block;
-        width: 40px;
-        height: 40px;
+        content: "🌨";
+        font-size: 2.5rem;
         margin-left: 30px;
-        margin-bottom: -6px;
-
-        background-image: url("rain.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
     }
 
     .weather img {
