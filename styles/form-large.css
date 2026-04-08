@@ -1,0 +1,170 @@
+@media screen and (min-width: 45em) {
+
+    header,
+    footer {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        font-family: "Roboto", sans-serif;
+        background-color: var(--text);
+        color: var(--head-color);
+        padding: 10px;
+    }
+
+    header {
+        margin-bottom: 10px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Montserrat;
+        background-color: var(--body-color);
+    }
+
+    .myform {
+        margin: 0 auto;
+    }
+
+    .myform label {
+        display: block;
+        padding: 5px;
+        font-weight: 500;
+    }
+
+    .myform input[type="text"],
+    .myform input[type="date"],
+    .myform select {
+        background-color: white;
+        display: block;
+        border: solid 1px grey;
+        border-radius: 6px;
+        padding: .75rem;
+        color: var(--text);
+        width: 100%;
+        max-width: 400px;
+        /* This rule appearance: none; override the browser of its default settings and display the input boxes according to the above rules */
+        appearance: none;
+    }
+
+    .myform select {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .rate {
+        font-weight: 500;
+    }
+
+    .stars {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        justify-content: space-between;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .stars>label {
+        color: var(--text);
+        width: 30px;
+        height: 30px;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        caret-color: rgba(0, 0, 0, 0);
+    }
+
+    .star>label:hover {
+        color: #000;
+    }
+
+    .stars>label::before {
+        content: "\2606";
+    }
+
+    .stars input:checked~label::before {
+        content: "\2605";
+    }
+
+    .stars input[type="radio"] {
+        display: none;
+    }
+
+    .myform input[type="date"] {
+        margin-bottom: 15px;
+        font-size: large;
+        font-family: sans-serif;
+    }
+
+    .feature,
+    .italize {
+        font-weight: 500;
+    }
+
+    .italize {
+        font-style: italic;
+        color: darkblue;
+    }
+
+    .optional {
+        color: darkblue;
+    }
+
+    .myform input[type="checkbox"] {
+        margin-right: 10px;
+
+    }
+
+    label[for="feedback"] {
+        margin-top: 20px;
+    }
+
+    textarea[id="feedback"] {
+        width: 100%;
+        max-width: 400px;
+        height: 200px;
+        /* This rule appearance: none; override the browser of its default settings and display the input boxes according to the above rules */
+        appearance: none;
+        resize: none;
+        font-family: sans-serif;
+        font-size: medium;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: white;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+        height: 40px;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+
+    input[type="submit"]:hover {
+        cursor: pointer;
+        background-color: rgb(185, 183, 183);
+    }
+
+    .thanks {
+        background-color: white;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .thanks h2 {
+        font-weight: 400;
+        font-size: large;
+    }
+
+    .click {
+        display: none
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+}

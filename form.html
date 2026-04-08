@@ -8,6 +8,7 @@
     <meta name="description" content="Following form best practises - WDD 131 - OLAGBAMI MOSES">
     <meta name="author" content="Moses Olagbami Ayobami">
     <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/form-large.css">
     <script src="./scripts/form.js" defer></script>
 
 
@@ -33,7 +34,7 @@
 
             <label for="product">Product Name</label>
             <select name="product" id="product" required>
-                <option disabled selected>Choose a Product &#9662;</option>
+                <option value="" disabled selected>Choose a Product &#9662;</option>
             </select>
 
 
@@ -46,14 +47,17 @@
                 <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
             </div>
 
-            <label>Date of Installation<input type="date" name="installdate" required></label>
+            <label for="installdate">Date of Installation</label>
+            <input type="date" id="installdate" name="installdate" required>
 
             <div class="feature">Which features did you find useful in the product?</div>
             <div class="italize">(Check all that apply)</div>
-            <label><input type="checkbox" name="durable" value="yes">Durability</label>
-            <label><input type="checkbox" name="Ease" value="yes">Ease of Use</label>
-            <label><input type="checkbox" name="performance" value="yes">Performance</label>
-            <label><input type="checkbox" name="design" value="yes">Design</label>
+
+            <label for="durable"><input type="checkbox" id="durable" name="durable" value="yes"> Durability</label>
+            <label for="ease"><input type="checkbox" id="ease" name="Ease" value="yes"> Ease of Use</label>
+            <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes">
+                Performance</label>
+            <label for="design"><input type="checkbox" id="design" name="design" value="yes"> Design</label>
 
             <label for="feedback">Written Review <span class="optional">(Optional)</span></label>
             <textarea id="feedback" name="feedback"></textarea>
@@ -62,7 +66,7 @@
             <input type="text" id="fullname" name="fullname">
 
             <input type="submit" value="Post My Review">
-            </for>
+        </form>
     </main>
 
     <footer>
