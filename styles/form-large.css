@@ -60,7 +60,6 @@
     .stars {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: left;
         justify-content: space-between;
         max-width: 400px;
         margin-bottom: 20px;
