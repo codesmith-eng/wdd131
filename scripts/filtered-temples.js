@@ -177,7 +177,7 @@ smallTemples.addEventListener("click", () => {
 function createCardTemple(temples) {
 
     // Clear the grid-cards div before creating new cards to avoid duplicates when filtering
-    document.querySelector(".grid-cards").innerHTML = ""; document.querySelector(".grid-cards").innerHTML = "";
+    document.querySelector(".grid-cards").innerHTML = "";
     temples.forEach(mytemple => {
 
         // Create HTML elements for each temple
