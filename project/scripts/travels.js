@@ -23,6 +23,21 @@ const currentYear = new Date().getFullYear();
 //This code get the element with the id "currentyear" and and replace with the current year
 document.getElementById("currentyear").textContent = currentYear;
 
+//function for looping through the objects Ourservices
+function populateServices(selectElement, servicesArray) {
+    // Loop through each service object in the services array
+    servicesArray.forEach(service => {
+        // Create a new <option> element for the dropdown
+        const option = document.createElement("option");
+
+        // Set the value attribute of the option to the service id
+        option.value = service.id;
+        // Set the visible text of the option to the service name
+        option.textContent = service.name;
+        // Add the option to the select dropdown
+        selectElement.appendChild(option);
+    });
+}
 
 const Ourservices = [
     {
@@ -69,22 +84,7 @@ const selectElement = document.getElementById("support");
 
 //check if the select element exists to protect it from interacting with other sections of code which may cause error
 if (selectElement) {
-    //function to loop through the products array and create an option element for each product, 
-    // set the value and text content of the option element, and append it to the select element
-
-    Ourservices.forEach(Nameservice => {
-        //create an option element for each product
-        let serviceName = document.createElement("option");
-
-        //set the service id as the value of the option element
-        serviceName.value = Nameservice.id;
-
-        //set the service name as the content of the option element
-        serviceName.textContent = `${Nameservice.name}`;
-
-        //append the option element to the select element
-        selectElement.appendChild(serviceName);
-    });
+    populateServices(selectElement, Ourservices);
 }
 
 
